@@ -4,18 +4,12 @@ export const Auth: { login: { path: string, method: string } } = {
 
 export const Header: 
   { 
-    create: { path: string, method: string }, 
     find: { path: string, method: string }, 
-    update: { path: string, method: string }, 
-    delete: { path: string, method: string }, 
-    list: { path: string, method: string   } 
+    update: { path: string, method: string   } 
  } = 
  {
-  create: { path: 'http://localhost:3001/header/', method: 'POST' },
-  find: { path: 'http://localhost:3001/header/:id', method: 'GET' },
+  find: { path: 'http://localhost:3001/header/', method: 'GET' },
   update: { path: 'http://localhost:3001/header/', method: 'PUT' },
-  delete: { path: 'http://localhost:3001/header/:id', method: 'DELETE' },
-  list: { path: 'http://localhost:3001/header/', method: 'GET' },
 };
 
 export const About: 
