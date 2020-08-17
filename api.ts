@@ -14,18 +14,12 @@ export const Header:
 
 export const About: 
   { 
-    create: { path: string, method: string }, 
     find: { path: string, method: string }, 
-    update: { path: string, method: string }, 
-    delete: { path: string, method: string }, 
-    list: { path: string, method: string   } 
+    update: { path: string, method: string   } 
  } = 
  {
-  create: { path: 'http://localhost:3001/about/', method: 'POST' },
-  find: { path: 'http://localhost:3001/about/:id', method: 'GET' },
+  find: { path: 'http://localhost:3001/about/', method: 'GET' },
   update: { path: 'http://localhost:3001/about/', method: 'PUT' },
-  delete: { path: 'http://localhost:3001/about/:id', method: 'DELETE' },
-  list: { path: 'http://localhost:3001/about/', method: 'GET' },
 };
 
 export const Service: 
