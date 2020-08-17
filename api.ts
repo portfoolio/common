@@ -59,3 +59,19 @@ export const Contact:
   delete: { path: 'http://localhost:3001/contact/:id', method: 'DELETE' },
   list: { path: 'http://localhost:3001/contact/', method: 'GET' },
 };
+
+export const Counter: 
+  { 
+    create: { path: string, method: string }, 
+    find: { path: string, method: string }, 
+    update: { path: string, method: string }, 
+    delete: { path: string, method: string }, 
+    list: { path: string, method: string   } 
+ } = 
+ {
+  create: { path: 'http://localhost:3001/counter/', method: 'POST' },
+  find: { path: 'http://localhost:3001/counter/:id', method: 'GET' },
+  update: { path: 'http://localhost:3001/counter/', method: 'PUT' },
+  delete: { path: 'http://localhost:3001/counter/:id', method: 'DELETE' },
+  list: { path: 'http://localhost:3001/counter/', method: 'GET' },
+};
