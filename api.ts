@@ -28,9 +28,7 @@ export const Service:
     find: { path: string, method: string }, 
     update: { path: string, method: string }, 
     delete: { path: string, method: string }, 
-    list: { path: string, method: string }, 
-    headerFind: { path: string, method: string }, 
-    headerUpdate: { path: string, method: string   } 
+    list: { path: string, method: string   } 
  } = 
  {
   create: { path: 'http://localhost:3001/service/', method: 'POST' },
@@ -38,8 +36,16 @@ export const Service:
   update: { path: 'http://localhost:3001/service/', method: 'PUT' },
   delete: { path: 'http://localhost:3001/service/:id', method: 'DELETE' },
   list: { path: 'http://localhost:3001/service/', method: 'GET' },
-  headerFind: { path: 'http://localhost:3001/service/header', method: 'GET' },
-  headerUpdate: { path: 'http://localhost:3001/service/header', method: 'PUT' },
+};
+
+export const ServiceHeader: 
+  { 
+    find: { path: string, method: string }, 
+    update: { path: string, method: string   } 
+ } = 
+ {
+  find: { path: 'http://localhost:3001/service-header/', method: 'GET' },
+  update: { path: 'http://localhost:3001/service-header/', method: 'PUT' },
 };
 
 export const Contact: 
