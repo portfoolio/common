@@ -38,8 +38,8 @@ export const Service:
   update: { path: 'http://localhost:3001/service/', method: 'PUT' },
   delete: { path: 'http://localhost:3001/service/:id', method: 'DELETE' },
   list: { path: 'http://localhost:3001/service/', method: 'GET' },
-  findHeader: { path: 'http://localhost:3001/service/', method: 'GET' },
-  updateHeader: { path: 'http://localhost:3001/service/', method: 'PUT' },
+  findHeader: { path: 'http://localhost:3001/service/header', method: 'GET' },
+  updateHeader: { path: 'http://localhost:3001/service/header', method: 'PUT' },
 };
 
 export const Contact: 
