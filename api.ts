@@ -115,9 +115,9 @@ export const JourneyItem:
     list: { path: string, method: string   } 
  } = 
  {
-  create: { path: 'http://localhost:3001/journey-item/:id', method: 'POST' },
-  find: { path: 'http://localhost:3001/journey-item/:id', method: 'GET' },
+  create: { path: 'http://localhost:3001/journey-item/:id/create-item', method: 'POST' },
+  find: { path: 'http://localhost:3001/journey-item/:id/find-item', method: 'GET' },
   update: { path: 'http://localhost:3001/journey-item/', method: 'PUT' },
   delete: { path: 'http://localhost:3001/journey-item/:journeyId/:id', method: 'DELETE' },
-  list: { path: 'http://localhost:3001/journey-item/:journeyId', method: 'GET' },
+  list: { path: 'http://localhost:3001/journey-item/:journeyId/list-items', method: 'GET' },
 };
