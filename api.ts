@@ -105,3 +105,19 @@ export const JourneyHeader:
   find: { path: 'http://localhost:3001/journey-header/', method: 'GET' },
   update: { path: 'http://localhost:3001/journey-header/', method: 'PUT' },
 };
+
+export const JourneyItem: 
+  { 
+    create: { path: string, method: string }, 
+    find: { path: string, method: string }, 
+    update: { path: string, method: string }, 
+    delete: { path: string, method: string }, 
+    list: { path: string, method: string   } 
+ } = 
+ {
+  create: { path: 'http://localhost:3001/journey-item/:id', method: 'POST' },
+  find: { path: 'http://localhost:3001/journey-item/:id', method: 'GET' },
+  update: { path: 'http://localhost:3001/journey-item/', method: 'PUT' },
+  delete: { path: 'http://localhost:3001/journey-item/:journeyId/:id', method: 'DELETE' },
+  list: { path: 'http://localhost:3001/journey-item/:journeyId', method: 'GET' },
+};
