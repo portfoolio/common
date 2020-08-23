@@ -121,3 +121,29 @@ export const JourneyItem:
   delete: { path: 'http://localhost:3001/journey-item/delete/:journeyId/:id', method: 'DELETE' },
   list: { path: 'http://localhost:3001/journey-item/list-items/:journeyId', method: 'GET' },
 };
+
+export const Project: 
+  { 
+    create: { path: string, method: string }, 
+    find: { path: string, method: string }, 
+    update: { path: string, method: string }, 
+    delete: { path: string, method: string }, 
+    list: { path: string, method: string   } 
+ } = 
+ {
+  create: { path: 'http://localhost:3001/project/', method: 'POST' },
+  find: { path: 'http://localhost:3001/project/:id', method: 'GET' },
+  update: { path: 'http://localhost:3001/project/', method: 'PUT' },
+  delete: { path: 'http://localhost:3001/project/:id', method: 'DELETE' },
+  list: { path: 'http://localhost:3001/project/', method: 'GET' },
+};
+
+export const ProjectHeader: 
+  { 
+    find: { path: string, method: string }, 
+    update: { path: string, method: string   } 
+ } = 
+ {
+  find: { path: 'http://localhost:3001/project-header/', method: 'GET' },
+  update: { path: 'http://localhost:3001/project-header/', method: 'PUT' },
+};
