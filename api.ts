@@ -79,3 +79,29 @@ export const Counter:
   delete: { path: 'http://localhost:3001/counter/:id', method: 'DELETE' },
   list: { path: 'http://localhost:3001/counter/', method: 'GET' },
 };
+
+export const Journey: 
+  { 
+    create: { path: string, method: string }, 
+    find: { path: string, method: string }, 
+    update: { path: string, method: string }, 
+    delete: { path: string, method: string }, 
+    list: { path: string, method: string   } 
+ } = 
+ {
+  create: { path: 'http://localhost:3001/journey/', method: 'POST' },
+  find: { path: 'http://localhost:3001/journey/:id', method: 'GET' },
+  update: { path: 'http://localhost:3001/journey/', method: 'PUT' },
+  delete: { path: 'http://localhost:3001/journey/:id', method: 'DELETE' },
+  list: { path: 'http://localhost:3001/journey/', method: 'GET' },
+};
+
+export const JourneyHeader: 
+  { 
+    find: { path: string, method: string }, 
+    update: { path: string, method: string   } 
+ } = 
+ {
+  find: { path: 'http://localhost:3001/journey-header/', method: 'GET' },
+  update: { path: 'http://localhost:3001/journey-header/', method: 'PUT' },
+};
