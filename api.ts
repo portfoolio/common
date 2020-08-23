@@ -174,7 +174,7 @@ export const TestimonialHeader:
   update: { path: 'http://localhost:3001/testimonial-header/', method: 'PUT' },
 };
 
-export const Technologie: 
+export const Technology: 
   { 
     create: { path: string, method: string }, 
     find: { path: string, method: string }, 
@@ -183,19 +183,19 @@ export const Technologie:
     list: { path: string, method: string   } 
  } = 
  {
-  create: { path: 'http://localhost:3001/technologie/', method: 'POST' },
-  find: { path: 'http://localhost:3001/technologie/:id', method: 'GET' },
-  update: { path: 'http://localhost:3001/technologie/', method: 'PUT' },
-  delete: { path: 'http://localhost:3001/technologie/:id', method: 'DELETE' },
-  list: { path: 'http://localhost:3001/technologie/', method: 'GET' },
+  create: { path: 'http://localhost:3001/technology/', method: 'POST' },
+  find: { path: 'http://localhost:3001/technology/:id', method: 'GET' },
+  update: { path: 'http://localhost:3001/technology/', method: 'PUT' },
+  delete: { path: 'http://localhost:3001/technology/:id', method: 'DELETE' },
+  list: { path: 'http://localhost:3001/technology/', method: 'GET' },
 };
 
-export const TechnologieHeader: 
+export const TechnologyHeader: 
   { 
     find: { path: string, method: string }, 
     update: { path: string, method: string   } 
  } = 
  {
-  find: { path: 'http://localhost:3001/technologie-header/', method: 'GET' },
-  update: { path: 'http://localhost:3001/technologie-header/', method: 'PUT' },
+  find: { path: 'http://localhost:3001/technology-header/', method: 'GET' },
+  update: { path: 'http://localhost:3001/technology-header/', method: 'PUT' },
 };
