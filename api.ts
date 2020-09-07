@@ -225,3 +225,13 @@ export const BlogHeader:
   find: { path: 'http://localhost:3001/blog-header/', method: 'GET' },
   update: { path: 'http://localhost:3001/blog-header/', method: 'PUT' },
 };
+
+export const Setting: 
+  { 
+    find: { path: string, method: string }, 
+    update: { path: string, method: string   } 
+ } = 
+ {
+  find: { path: 'http://localhost:3001/setting/', method: 'GET' },
+  update: { path: 'http://localhost:3001/setting/', method: 'PUT' },
+};
