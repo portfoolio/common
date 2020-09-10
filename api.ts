@@ -235,3 +235,7 @@ export const Setting:
   find: { path: 'http://localhost:3001/setting/', method: 'GET' },
   update: { path: 'http://localhost:3001/setting/', method: 'PUT' },
 };
+
+export const Client: { fetchAbout: { path: string, method: string } } = {
+  fetchAbout: { path: 'http://localhost:3001/client/fetch-about', method: 'GET' },
+};
