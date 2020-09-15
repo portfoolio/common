@@ -242,7 +242,8 @@ export const Client:
     fetchService: { path: string, method: string }, 
     fetchJourney: { path: string, method: string }, 
     fetchProject: { path: string, method: string }, 
-    fetchTestimonial: { path: string, method: string   } 
+    fetchTestimonial: { path: string, method: string }, 
+    fetchBlog: { path: string, method: string   } 
  } = 
  {
   fetchAbout: { path: 'http://localhost:3001/client/fetch-about', method: 'GET' },
@@ -250,4 +251,5 @@ export const Client:
   fetchJourney: { path: 'http://localhost:3001/client/fetch-journey', method: 'GET' },
   fetchProject: { path: 'http://localhost:3001/client/fetch-project', method: 'GET' },
   fetchTestimonial: { path: 'http://localhost:3001/client/fetch-testimonial', method: 'GET' },
+  fetchBlog: { path: 'http://localhost:3001/client/fetch-blog', method: 'GET' },
 };
