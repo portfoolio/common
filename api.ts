@@ -236,6 +236,12 @@ export const Setting:
   update: { path: 'http://localhost:3001/setting/', method: 'PUT' },
 };
 
-export const Client: { fetchAbout: { path: string, method: string } } = {
+export const Client: 
+  { 
+    fetchAbout: { path: string, method: string }, 
+    fetchService: { path: string, method: string   } 
+ } = 
+ {
   fetchAbout: { path: 'http://localhost:3001/client/fetch-about', method: 'GET' },
+  fetchService: { path: 'http://localhost:3001/client/fetch-service', method: 'GET' },
 };
