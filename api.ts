@@ -239,9 +239,11 @@ export const Setting:
 export const Client: 
   { 
     fetchAbout: { path: string, method: string }, 
-    fetchService: { path: string, method: string   } 
+    fetchService: { path: string, method: string }, 
+    fetchJourney: { path: string, method: string   } 
  } = 
  {
   fetchAbout: { path: 'http://localhost:3001/client/fetch-about', method: 'GET' },
   fetchService: { path: 'http://localhost:3001/client/fetch-service', method: 'GET' },
+  fetchJourney: { path: 'http://localhost:3001/client/fetch-journey', method: 'GET' },
 };
